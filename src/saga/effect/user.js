@@ -1,5 +1,5 @@
 import { call, put, takeEvery, takeLatest, fork } from "redux-saga/effects";
-import { USER } from "../action";
+import { USER } from "../../common/action";
 import Api from "../api";
 
 // worker Saga: will be fired on USER_FETCH_REQUESTED actions

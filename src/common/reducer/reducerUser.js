@@ -1,4 +1,4 @@
-import { USER } from "../action";
+import { USER } from "../../common/action";
 const initialState = {
   name: "",
   avatar_url: "",
