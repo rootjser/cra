@@ -1,14 +1,15 @@
 import React from "react";
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
-import { USER } from "../common/action";
+import { OB, SAGA } from "../common/action";
 // import { useDispatch } from "../observable/reducer";
 const UserPage = (props) => {
   // const dispatch = useDispatch();
   const { dispatch } = props;
   const click = () => {
-    console.log("click GITHUB_USER_API");
-    dispatch({ type: USER.GITHUB_USER_API });
+    console.log("click GITHUB_OB_API");
+    dispatch({ type: OB.GITHUB_OB_API });
+    dispatch({ type: SAGA.GITHUB_SAGA_API });
   };
   return (
     <div>

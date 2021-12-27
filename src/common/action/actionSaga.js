@@ -1,0 +1,4 @@
+export const SAGA = {
+  GITHUB_SAGA_API: "GITHUB_SAGA_API",
+  SET_SAGA_INFO: "SET_SAGA_INFO",
+};
