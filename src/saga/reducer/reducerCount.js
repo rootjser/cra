@@ -1,4 +1,4 @@
-import { Count } from "../action";
+import { Count } from "../../common/action";
 const initialState = {
   counter: 0,
 };

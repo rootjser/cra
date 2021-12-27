@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { Count } from "../observable/action";
+import { Count } from "../common/action";
 const ContactPage = (props) => {
   const { dispatch } = props;
   const click = () => {

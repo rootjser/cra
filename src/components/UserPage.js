@@ -1,7 +1,7 @@
 import React from "react";
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
-import { USER } from "../observable/action";
+import { USER } from "../common/action";
 // import { useDispatch } from "../observable/reducer";
 const UserPage = (props) => {
   // const dispatch = useDispatch();
