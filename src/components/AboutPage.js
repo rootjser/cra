@@ -1,9 +1,11 @@
+import React from "react";
 import { connect } from "react-redux";
+import { Count } from "../observable/action";
 const AboutPage = (props) => {
   const { dispatch } = props;
   const click = () => {
     dispatch({
-      type: "increment",
+      type: Count.INCREASE,
     });
   };
   return (
@@ -13,4 +15,6 @@ const AboutPage = (props) => {
     </div>
   );
 };
-export default connect(({ counter }) => ({ counter }))(AboutPage);
+export default connect(({ reducerCount: { counter } }) => ({ counter }))(
+  AboutPage
+);

@@ -4,11 +4,9 @@ import { Provider } from "react-redux";
 import store from "./store";
 import { BrowserRouter, Route, Link } from "react-router-dom";
 import HomePage from "./components/HomePage";
-import LoginPage from "./components/LoginPage";
 import AboutPage from "./components/AboutPage";
 import ContactPage from "./components/ContactPage";
-import ProfilePage from "./components/ProfilePage";
-import RegisterPage from "./components/RegisterPage";
+import UserPage from "./components/UserPage";
 
 const BaseLayout = () => (
   <div className="base">
@@ -20,19 +18,13 @@ const BaseLayout = () => (
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/about">路由加1</Link>
           </li>
           <li>
-            <Link to="/me">Profile</Link>
+            <Link to="/contact">路由减1</Link>
           </li>
           <li>
-            <Link to="/login">Login</Link>
-          </li>
-          <li>
-            <Link to="/register">Register</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
+            <Link to="/user">用户信息请求</Link>
           </li>
         </ul>
       </nav>
@@ -41,9 +33,7 @@ const BaseLayout = () => (
       <Route path="/" component={HomePage} />
       <Route path="/about" component={AboutPage} />
       <Route path="/contact" component={ContactPage} />
-      <Route path="/login" component={LoginPage} />
-      <Route path="/register" component={RegisterPage} />
-      <Route path="/me" component={ProfilePage} />
+      <Route path="/user" component={UserPage} />
     </div>
     <footer>React Router v4 Browser Example (c) 2017</footer>
   </div>
