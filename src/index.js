@@ -101,7 +101,7 @@ app.model({
       try {
         const result = yield call(Api.fetchUser);
         console.log(result);
-        yield put({ type: "SET_SAGA_INFO", payload: result.data });
+        yield put({ type: "SET_SAGA_INFO", payload: result });
       } catch (e) {
         yield put({ type: "USER_FETCH_FAILED", message: e.message });
       }
