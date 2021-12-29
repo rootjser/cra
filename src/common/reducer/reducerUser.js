@@ -13,7 +13,7 @@ export default function reducerUser(state = initialState, action) {
         avatar_url: "",
       };
     case OB.SET_OB_INFO:
-      console.log("reducer", action);
+      console.log("reducer ob", state, action);
       let {
         payload: { name, avatar_url },
       } = action;

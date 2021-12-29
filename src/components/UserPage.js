@@ -1,6 +1,7 @@
 import React from "react";
 import { bindActionCreators } from "redux";
-import { connect } from "react-redux";
+// import { connect } from "react-redux";
+import { connect } from "dva";
 import { OB, SAGA } from "../common/action";
 // import { useDispatch } from "../observable/reducer";
 const UserPage = (props) => {
@@ -9,6 +10,7 @@ const UserPage = (props) => {
   const click = () => {
     console.log("click GITHUB_OB_API");
     dispatch({ type: OB.GITHUB_OB_API });
+    console.log("click GITHUB_SAGA_API");
     dispatch({ type: SAGA.GITHUB_SAGA_API });
   };
   return (

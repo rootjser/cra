@@ -1,5 +1,6 @@
 import React from "react";
-import { connect } from "react-redux";
+// import { connect } from "react-redux";
+import { connect } from "dva";
 import { Count } from "../common/action";
 const AboutPage = (props) => {
   const { dispatch } = props;
